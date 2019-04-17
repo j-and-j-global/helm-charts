@@ -1,6 +1,6 @@
 image:
   repository: jspc/kafka-to-redisearch
-  tag: latest
+  tag: 0.2.0
   pullPolicy: IfNotPresent
 
 resources:
