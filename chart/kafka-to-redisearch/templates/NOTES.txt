@@ -1,0 +1,11 @@
+kafka-to-redisearch is configured with:
+
+ * Kafka Topic: {{ .Values.kafka.topic }}
+ * Kafka Bootstrap Servers: {{ .Values.kafka.bootstrapServers }}
+ * Redis Master: {{ .Values.redis.master }}
+ * Redis Index: {{ .Values.redis.index }}
+
+
+Logs are at:
+
+kubectl logs --namespace {{ .Release.Namespace }} -l "app={{ include "kafka-to-redisearch.name" . }},release={{ .Release.Name }}"

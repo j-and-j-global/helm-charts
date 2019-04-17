@@ -1,0 +1,20 @@
+image:
+  repository: jspc/kafka-to-redisearch
+  tag: latest
+  pullPolicy: IfNotPresent
+
+resources:
+  limits:
+   cpu: 100m
+   memory: 128Mi
+  requests:
+   cpu: 100m
+   memory: 128Mi
+
+kafka:
+  bootstrapServers: content-kafka.jj:9092
+  topic: content
+
+redis:
+  master: content-redis-master:6379
+  index: content

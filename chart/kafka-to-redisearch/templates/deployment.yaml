@@ -1,0 +1,61 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: {{ include "kafka-to-redisearch.fullname" . }}
+  labels:
+    app: {{ include "kafka-to-redisearch.name" . }}
+    chart: {{ include "kafka-to-redisearch.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "kafka-to-redisearch.name" . }}
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "kafka-to-redisearch.name" . }}
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: KAFKA_BOOTSTRAP
+              value: "{{ .Values.kafka.bootstrapServers }}"
+            - name: KAFKA_TOPIC
+              value: "{{ .Values.kafka.topic }}"
+            - name: REDIS_MASTER
+              value: "{{ .Values.redis.master }}"
+            - name: REDIS_INDEX
+              value: "{{ .Values.redis.index }}"
+          livenessProbe:
+            exec:
+              command:
+                - uptime
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          readinessProbe:
+            exec:
+              command:
+                - uptime
+            initialDelaySeconds: 5
+            periodSeconds: 5
+
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
+    {{- with .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+{{ toYaml . | indent 8 }}
+    {{- end }}
