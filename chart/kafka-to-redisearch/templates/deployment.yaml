@@ -35,13 +35,15 @@ spec:
           livenessProbe:
             exec:
               command:
-                - "true"
+                - "touch"
+                - "/tmp/success"
             initialDelaySeconds: 5
             periodSeconds: 5
           readinessProbe:
             exec:
               command:
-                - "true"
+                - "touch"
+                - "/tmp/success"
             initialDelaySeconds: 5
             periodSeconds: 5
 

@@ -3,7 +3,16 @@ entries:
   kafka-to-redisearch:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-04-17T11:06:19.498978693+01:00
+    created: 2019-04-17T11:11:39.422870091+01:00
+    description: Push messages from kafka into redis
+    digest: 96312226a27fae86342a994a2620519bd62faa00c7bf2adc87d3f9de8c9f015b
+    name: kafka-to-redisearch
+    urls:
+    - kafka-to-redisearch-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-04-17T11:11:39.422647396+01:00
     description: Push messages from kafka into redis
     digest: db747a1c51d803744d5ecb807a5a21356dd31d75b09dc705f55e982e4fbdf222
     name: kafka-to-redisearch
@@ -12,11 +21,11 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-04-17T11:06:19.498726859+01:00
+    created: 2019-04-17T11:11:39.422393868+01:00
     description: Push messages from kafka into redis
     digest: e074c0a08819b6c5ab43a2164ff8504b5d5b2e22b3e439e47af2b78424dfd782
     name: kafka-to-redisearch
     urls:
     - kafka-to-redisearch-0.1.0.tgz
     version: 0.1.0
-generated: 2019-04-17T11:06:19.498281423+01:00
+generated: 2019-04-17T11:11:39.421667141+01:00
