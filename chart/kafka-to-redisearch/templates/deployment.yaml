@@ -35,13 +35,13 @@ spec:
           livenessProbe:
             exec:
               command:
-                - true
+                - "true"
             initialDelaySeconds: 5
             periodSeconds: 5
           readinessProbe:
             exec:
               command:
-                - true
+                - "true"
             initialDelaySeconds: 5
             periodSeconds: 5
 
