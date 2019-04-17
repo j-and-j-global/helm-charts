@@ -5,6 +5,13 @@ kafka-to-redisearch is configured with:
  * Redis Master: {{ .Values.redis.master }}
  * Redis Index: {{ .Values.redis.index }}
 
+To tune these to your own environment, should you not have done so already, you can run
+
+  /usr/bin/helm inspect jspc/kafka-to-redisearch > values.yml
+
+To dump out the values for this chart. You can edit this to reflect your environment, and then run:
+
+  /usr/bin/helm upgrade {{ .Release.Name }} jspc/kafka-to-redisearch --values=values.yml
 
 Logs are at:
 

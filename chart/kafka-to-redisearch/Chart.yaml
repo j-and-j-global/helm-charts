@@ -1,5 +1,11 @@
 apiVersion: v1
-appVersion: "0.2.2"
-description: Push messages from kafka into redis
+appVersion: "0.3.0"
+description: |
+  Push CMS messages from Kafka into Redis, and indexing with redisearch for later
+  content search.
+
+  This chart is designed to be used alongside wordpress; it takes the strain away from
+  serving content from the CMS directly- content is static and should not need to be
+  re-processed and re-generated on request.
 name: kafka-to-redisearch
-version: 0.2.2
+version: 0.3.0
