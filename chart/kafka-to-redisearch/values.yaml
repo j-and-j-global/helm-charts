@@ -1,6 +1,6 @@
 image:
   repository: jspc/kafka-to-redisearch
-  tag: 0.3.0
+  tag: 0.4.0
   pullPolicy: IfNotPresent
 
 resources:
@@ -12,7 +12,7 @@ resources:
    memory: 128Mi
 
 kafka:
-  bootstrapServers: content-kafka.jj:9092
+  bootstrapServers: content-kafka:9092
   topic: content
 
 redis:
