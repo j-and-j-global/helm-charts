@@ -1,5 +1,5 @@
 apiVersion: v1
-appVersion: "0.5.2"
+appVersion: "0.5.3"
 description: |
   Push CMS messages from Kafka into Redis, and indexing with redisearch for later
   content search.
@@ -8,4 +8,4 @@ description: |
   serving content from the CMS directly- content is static and should not need to be
   re-processed and re-generated on request.
 name: kafka-to-redisearch
-version: 0.5.2
+version: 0.5.3
