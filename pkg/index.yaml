@@ -2,8 +2,23 @@ apiVersion: v1
 entries:
   kafka-to-redisearch:
   - apiVersion: v1
+    appVersion: 0.5.2
+    created: 2019-04-21T20:02:19.251560924+01:00
+    description: |
+      Push CMS messages from Kafka into Redis, and indexing with redisearch for later
+      content search.
+
+      This chart is designed to be used alongside wordpress; it takes the strain away from
+      serving content from the CMS directly- content is static and should not need to be
+      re-processed and re-generated on request.
+    digest: 6b1b5595c5e5da7a30e696c70a08d960a6a8dbc4da0b4e6ac1de4e02b7010821
+    name: kafka-to-redisearch
+    urls:
+    - kafka-to-redisearch-0.5.2.tgz
+    version: 0.5.2
+  - apiVersion: v1
     appVersion: 0.5.1
-    created: 2019-04-21T19:57:06.158658593+01:00
+    created: 2019-04-21T20:02:19.251087928+01:00
     description: |
       Push CMS messages from Kafka into Redis, and indexing with redisearch for later
       content search.
@@ -18,7 +33,7 @@ entries:
     version: 0.5.1
   - apiVersion: v1
     appVersion: 0.5.0
-    created: 2019-04-21T19:57:06.158482177+01:00
+    created: 2019-04-21T20:02:19.250573524+01:00
     description: |
       Push CMS messages from Kafka into Redis, and indexing with redisearch for later
       content search.
@@ -33,7 +48,7 @@ entries:
     version: 0.5.0
   - apiVersion: v1
     appVersion: 0.4.0
-    created: 2019-04-21T19:57:06.158041599+01:00
+    created: 2019-04-21T20:02:19.250117505+01:00
     description: |
       Push CMS messages from Kafka into Redis, and indexing with redisearch for later
       content search.
@@ -48,7 +63,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 0.3.0
-    created: 2019-04-21T19:57:06.157611628+01:00
+    created: 2019-04-21T20:02:19.249876113+01:00
     description: |
       Push CMS messages from Kafka into Redis, and indexing with redisearch for later
       content search.
@@ -63,7 +78,7 @@ entries:
     version: 0.3.0
   - apiVersion: v1
     appVersion: 0.2.2
-    created: 2019-04-21T19:57:06.157201116+01:00
+    created: 2019-04-21T20:02:19.249610499+01:00
     description: Push messages from kafka into redis
     digest: be4a10ac42822f2c6e7601e29fb93d39ec2184edf098be04ffecd05c57382a6c
     name: kafka-to-redisearch
@@ -72,7 +87,7 @@ entries:
     version: 0.2.2
   - apiVersion: v1
     appVersion: 0.2.1
-    created: 2019-04-21T19:57:06.157051118+01:00
+    created: 2019-04-21T20:02:19.249363259+01:00
     description: Push messages from kafka into redis
     digest: 4027c6a73ec68ab5bfbccd6d6be97bcff31a6ae117a41da570dae6519a955672
     name: kafka-to-redisearch
@@ -81,7 +96,7 @@ entries:
     version: 0.2.1
   - apiVersion: v1
     appVersion: 0.2.0
-    created: 2019-04-21T19:57:06.156886159+01:00
+    created: 2019-04-21T20:02:19.249138347+01:00
     description: Push messages from kafka into redis
     digest: e1c8aeabde3c3462c13f16595fadd90da72f4388d3975183ea37d0adba0e15b5
     name: kafka-to-redisearch
@@ -90,7 +105,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-04-21T19:57:06.156707338+01:00
+    created: 2019-04-21T20:02:19.248906414+01:00
     description: Push messages from kafka into redis
     digest: 96312226a27fae86342a994a2620519bd62faa00c7bf2adc87d3f9de8c9f015b
     name: kafka-to-redisearch
@@ -99,7 +114,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-04-21T19:57:06.156522441+01:00
+    created: 2019-04-21T20:02:19.248684892+01:00
     description: Push messages from kafka into redis
     digest: db747a1c51d803744d5ecb807a5a21356dd31d75b09dc705f55e982e4fbdf222
     name: kafka-to-redisearch
@@ -108,11 +123,11 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-04-21T19:57:06.156335465+01:00
+    created: 2019-04-21T20:02:19.248435242+01:00
     description: Push messages from kafka into redis
     digest: e074c0a08819b6c5ab43a2164ff8504b5d5b2e22b3e439e47af2b78424dfd782
     name: kafka-to-redisearch
     urls:
     - kafka-to-redisearch-0.1.0.tgz
     version: 0.1.0
-generated: 2019-04-21T19:57:06.155965179+01:00
+generated: 2019-04-21T20:02:19.248049604+01:00
